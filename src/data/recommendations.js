@@ -9,7 +9,7 @@ export const recommendations = [
     type: "Books",
     creator: "Fei-Fei Li",
     year: 2023,
-    image: "public/TWIS-book.jpg",
+    image: "/TWIS-book.jpg",
     //rating: 5,
     //why: "A beautiful memoir that interweaves personal journey with the evolution of computer vision. Fei-Fei Li's story of curiosity, persistence, and humanity in AI is deeply inspiring.",
     link: "https://www.amazon.in/Worlds-See-Curiosity-Exploration-Discovery-ebook/dp/B0BPQSLVL6"
@@ -20,7 +20,7 @@ export const recommendations = [
     type: "Papers",
     creator: "Vaswani et al.",
     year: 2017,
-    image: "public/attension-paper.png",
+    image: "/attension-paper.png",
     //rating: 5,
     //why: "The paper that revolutionized NLP and gave birth to transformers. Elegant architecture that proved attention mechanisms alone are sufficient for sequence-to-sequence tasks.",
     link: "https://arxiv.org/abs/1706.03762"
