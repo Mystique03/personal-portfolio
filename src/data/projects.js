@@ -71,10 +71,10 @@ export const allProjects = [
     featured: false
   },
   {
-    title: "Sentiment Analysis Dashboard",
+    title: "Sentiment Analysis",
     description: "Real-time sentiment analysis dashboard for social media data using BERT models.",
-    tags: ["Transformers", "Python", "Streamlit", "MongoDB"],
-    link: "https://github.com/yourusername/sentiment-dash",
+    tags: ["Transformers", "Python", "NLP"],
+    link: null,
     year: 2023,
     madeAt: "Personal Project",
     featured: false

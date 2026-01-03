@@ -6,7 +6,7 @@ import { experiences } from '../data/experiences';
 const Experience = ({ theme }) => {
   return (
     <section id="experience" className="mb-16 scroll-mt-16 lg:mb-24 lg:scroll-mt-24">
-                    <div className={`sticky top-0 z-20 -mx-6 mb-4 w-screen ${theme.bgTranslucent} px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0`}>
+      <div className={`sticky top-0 z-20 -mx-6 mb-4 w-screen ${theme.bgTranslucent} px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0`}>
         <h2 className={`text-sm font-bold uppercase tracking-widest ${theme.textBright}`}>
           Experience
         </h2>
@@ -30,7 +30,21 @@ const Experience = ({ theme }) => {
                     </div>
                   </h3>
                   <p className={`text-sm ${theme.textDim} mb-2`}>{exp.location}</p>
-                  <p className="mt-2 text-sm leading-normal">{exp.description}</p>
+                  
+              
+                  {Array.isArray(exp.description) ? (
+                    <ul className="mt-2 space-y-2">
+                      {exp.description.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex} className="text-sm leading-normal flex">
+                          <span className="mr-2 ${theme.accent} ">•</span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="mt-2 text-sm leading-normal">{exp.description}</p>
+                  )}
+                  
                   <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                     {exp.tags.map((tag, tagIndex) => (
                       <li key={tagIndex} className="mr-1.5 mt-2">
@@ -50,7 +64,7 @@ const Experience = ({ theme }) => {
             href="/resume.pdf"
             className={`inline-flex items-center font-medium leading-tight ${theme.textBright} group`}
           >
-            <span className={`border-b border-transparent pb-px transition group-hover:${theme.border}`}>
+            <span className="border-b border-transparent pb-px transition ${theme.accent} group-hover:border-current group-focus-visible:border-current">
               View Full Resume
             </span>
             <FileText className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" />

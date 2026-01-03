@@ -10,16 +10,16 @@ export const themes = {
     // Text colors
     text: 'text-neutral-300',
     textBright: 'text-neutral-100',
-    textDim: 'text-neutral-500',
+    textDim: 'text-neutral-400',
     textMedium: 'text-neutral-300',
     
     // Accent colors - Burgundy theme
     accent: 'text-rose-800',
-    accentHover: 'hover:text-rose-900',
+    accentHover: 'hover:text-neutral-100',
     accentBright: 'text-rose-600',
     
     // Cards & Interactions
-    cardHover: 'lg:group-hover:bg-red-900/20',
+    cardHover: 'lg:group-hover:bg-red-900/30',
     cardBg: 'bg-neutral-800',
     cardBorder: 'border-neutral-800',
     
