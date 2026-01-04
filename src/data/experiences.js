@@ -7,14 +7,14 @@ export const experiences = [
     location: "Bengaluru, India",
     description: [
       "Designed conditional GAN augmentation pipelines for imbalanced datasets, reducing manual data collection costs by ~80%",
-      "Led a team of 3 to test and fine-tune CNN architectures on large-scale medicinal leaf datasets with 10,000+ images",
+      "Led a team of 3 to test and fine-tune CNN architectures on large-scale medicinal leaf datasets with 15,000+ images",
       "Implemented data preprocessing and augmentation pipeline using PyTorch and OpenCV, improving model generalization"
     ],
     tags: ["GANs", "TensorFlow", "Computer Vision", "Deep Learning"]
   },
   {
     period: "Oct 2024 — Mar 2025",
-    title: "Research Intern",
+    title: "Robotics Intern",
     company: "National Taiwan Normal University",
     location: "Taipei, Taiwan",
     description: [
@@ -31,10 +31,10 @@ export const experiences = [
     company: "Presidency University",
     location: "Bengaluru, India",
     description: [
-      "Achieved 99.5% test accuracy on SIPKaMed cervical cell dataset by fine-tuning SOTA deep learning models, surpassing existing benchmarks",
+      "Developed deep learning pipelines for cervical cell classification, achieving 99.5% test accuracy on SIPKaMed dataset, surpassing existing benchmarks",
       "Evaluated 8+ segmentation and classification architectures (VGG16, ResNet, EfficientNet) for medical imaging workflows",
-      "Implemented transfer learning techniques using TensorFlow and Keras, reducing training time by 40%",
-      "Contributed to research paper accepted in Informatica Journal, detailing methodology and results"
+      "Conducted psychological survey study on undergraduate mental health post-COVID, presented findings at IEEE International conference",
+      "Co-authored multiple journal publications and performed experimental reproducibility testing on trained models"
     ],
     tags: ["Medical Imaging", "Deep Learning", "TensorFlow", "Keras"]
   }

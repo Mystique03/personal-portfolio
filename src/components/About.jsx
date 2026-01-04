@@ -35,16 +35,24 @@ const About = ({ theme }) => {
         </p>
         <p className="mb-4">
           Fast-forward to today: I work on{' '}
-          <span className={`${theme.textBright} font-medium`}>Applied Machine Learning</span> and{' '}
+          <span className={`${theme.textBright} font-medium`}>Machine Learning</span> and{' '}
           <span className={`${theme.textBright} font-medium`}>AI projects</span> spanning{' '}
           <span className={`${theme.textBright} font-medium`}>Computer Vision</span>,{' '}
           <span className={`${theme.textBright} font-medium`}>Generative AI</span>,{' '}
           <span className={`${theme.textBright} font-medium`}>Natural Language Processing</span>,{' '}
           <span className={`${theme.textBright} font-medium`}>Robotics</span>, and{' '}
-          <span className={`${theme.textBright} font-medium`}>Data-Driven Systems</span>. I enjoy going deep into concepts, understanding the math behind models, and turning ideas into systems that actually work.
+          <span className={`${theme.textBright} font-medium`}>Data-Driven Systems</span>. 
         </p>
         <p>
-          When I'm not neck-deep in models and experiments, you'll find me binging 
+          My reserach interests include{' '}
+          <span className={`${theme.textBright} font-medium`}>Deep Learning</span>,{' '}
+          <span className={`${theme.textBright} font-medium`}>Computer Vision</span>, and{' '}
+          <span className={`${theme.textBright} font-medium`}>Multi-modal Learning</span>. 
+          I'm particularly interested in exploring how visual and contextual information can enhance visual understanding and spatial intelligence.
+          I enjoy going deep into concepts, understanding the math behind models, and turning ideas into systems that actually work.
+        </p>
+        <p>
+          <br />When I'm not neck-deep in models and experiments, you'll find me binging 
           {' '}<span className={`${theme.accent} font-medium`}>Anime </span> 
           or keeping up with{' '}<span className={`${theme.accent} font-medium`}>Formula 1</span>.
         </p>
