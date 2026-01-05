@@ -24,7 +24,6 @@ const Header = ({ activeSection, theme, sections }) => {
           I build models for Vision, Language, and Beyond.
         </p>
 
-        {/* Navigation - NO BLOG HERE */}
         <nav className="nav hidden lg:block mt-16" aria-label="In-page jump links">
           <ul className="w-max">
             {sections.map((section) => (
@@ -58,13 +57,12 @@ const Header = ({ activeSection, theme, sections }) => {
         </nav>
       </div>
 
-      {/* Social links - BLOG IS HERE */}
       <ul className="ml-1 mt-8 flex items-center gap-5" aria-label="Social media">
         <li>
           <a
             href="https://github.com/Mystique03"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             className={`block ${theme.accentHover} transition-colors`}
             aria-label="GitHub"
           >
@@ -75,7 +73,7 @@ const Header = ({ activeSection, theme, sections }) => {
           <a
             href="https://www.linkedin.com/in/smitha-reddy-s/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             className={`block ${theme.accentHover} transition-colors`}
             aria-label="LinkedIn"
           >

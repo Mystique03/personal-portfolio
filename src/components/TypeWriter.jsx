@@ -1,23 +1,34 @@
 // src/components/TypeWriter.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const TypeWriter = ({ text, speed = 80, theme }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
+    // Clear any existing timeout
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
     if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setDisplayText(prev => prev + text[currentIndex]);
         setCurrentIndex(prev => prev + 1);
       }, speed);
-
-      return () => clearTimeout(timeout);
-    } else {
+    } else if (currentIndex === text.length && !isComplete) {
       setIsComplete(true);
     }
-  }, [currentIndex, text, speed]);
+
+    // Cleanup function
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [currentIndex, text, speed, isComplete]);
 
   return (
     <span className={theme.textBright}>

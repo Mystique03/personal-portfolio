@@ -1,16 +1,26 @@
 // src/components/About.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import TypeWriter from './TypeWriter';
 
 const About = ({ theme }) => {
-  const [showTypewriter, setShowTypewriter] = useState(true);
+  const [showTypewriter, setShowTypewriter] = useState(false);
+  const hasCheckedStorage = useRef(false);
 
   useEffect(() => {
+    if (hasCheckedStorage.current) return;
+    hasCheckedStorage.current = true;
+
     const hasSeenTypewriter = sessionStorage.getItem('typewriterShown');
-    if (hasSeenTypewriter) {
-      setShowTypewriter(false);
+    
+    if (!hasSeenTypewriter) {
+      setShowTypewriter(true);
+      // Set flag after typewriter has had time to start
+      setTimeout(() => {
+        sessionStorage.setItem('typewriterShown', 'true');
+      }, 200);
     } else {
-      sessionStorage.setItem('typewriterShown', 'true');
+      // Returning visitor - skip typewriter
+      setShowTypewriter(false);
     }
   }, []);
 
@@ -24,11 +34,12 @@ const About = ({ theme }) => {
       <div>
         <p className="mb-4">
           {showTypewriter ? (
-            <TypeWriter text="Hello!" speed={60} theme={theme} />
+            <TypeWriter text="Hello!" speed={100} theme={theme} />
           ) : (
             <span className={theme.textBright}>Hello!</span>
           )}
-          {" "}<br />I'm Smitha, and I've been fascinated by Artificial Intelligence for as long as I can remember. 
+          {" "}
+          <br />I'm Smitha, and I've been fascinated by Artificial Intelligence for as long as I can remember. 
           Growing up watching Marvel movies, I dreamed of building an intelligent assistant like JARVIS—I'd name mine{' '}
           <span className={`${theme.accent} font-medium`}>Mystique</span>. 
           That curiosity led me down the rabbit hole of lectures by Fei-Fei Li, Geoffrey Hinton, and Andrew Ng.
@@ -44,7 +55,7 @@ const About = ({ theme }) => {
           <span className={`${theme.textBright} font-medium`}>Data-Driven Systems</span>. 
         </p>
         <p>
-          My reserach interests include{' '}
+          My research interests include{' '}
           <span className={`${theme.textBright} font-medium`}>Deep Learning</span>,{' '}
           <span className={`${theme.textBright} font-medium`}>Computer Vision</span>, and{' '}
           <span className={`${theme.textBright} font-medium`}>Multi-modal Learning</span>. 
