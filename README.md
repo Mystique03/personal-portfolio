@@ -44,8 +44,6 @@ Edit the content in `src/App.jsx`:
 
 ## Contact
 - Email: smithasreddy13@gmail.com
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
 
 ---
 Built with ❤️ using React & Tailwind CSS
