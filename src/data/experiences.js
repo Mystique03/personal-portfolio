@@ -6,9 +6,10 @@ export const experiences = [
     company: "Manipal University",
     location: "Bengaluru, India",
     description: [
-      "Designed conditional GAN augmentation pipelines for imbalanced datasets, reducing manual data collection costs by ~80%",
-      "Led a team of 3 to test and fine-tune CNN architectures on large-scale medicinal leaf datasets with 15,000+ images",
-      "Implemented data preprocessing and augmentation pipeline using PyTorch and OpenCV, improving model generalization"
+      "Designed and implemented a class-conditional GAN–based data augmentation pipeline in PyTorch to mitigate severe class imbalance in small-scale (<1.5K samples) medicinal leaf datasets, reducing manual data collection efforts by ~80%",
+      "Spearheaded 3-member team to benchmark and optimize deep learning architectures including EfficientNet, ResNet, VGG, and Vision Transformers (ViT-S, ViT-B) using transfer learning and systematic hyperparameter tuning.",
+      "Developing lightweight hybrid CNN–Transformer models for efficient image classification with integrated explainable AI (XAI) evaluation metrics to enhance model interpretability",
+      "First-author contributor on a journal manuscript currently under peer review"
     ],
     tags: ["GANs", "TensorFlow", "Computer Vision", "Deep Learning"]
   },
