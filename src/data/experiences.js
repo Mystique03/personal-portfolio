@@ -1,9 +1,9 @@
 // src/data/experiences.js
 export const experiences = [
   {
-    period: "May 2024 — Present",
-    title: "Research Intern",
-    company: "Manipal University",
+    period: "April 2025 — Present",
+    title: "Research Assistant",
+    company: "Manipal Institute of Technology",
     location: "Bengaluru, India",
     description: [
       "Designed and implemented a class-conditional GAN–based data augmentation pipeline in PyTorch to mitigate severe class imbalance in small-scale (<1.5K samples) medicinal leaf datasets, reducing manual data collection efforts by ~80%",
@@ -11,7 +11,7 @@ export const experiences = [
       "Developing lightweight hybrid CNN–Transformer models for efficient image classification with integrated explainable AI (XAI) evaluation metrics to enhance model interpretability",
       "First-author contributor on a journal manuscript currently under peer review"
     ],
-    tags: ["GANs", "TensorFlow", "Computer Vision", "Deep Learning"]
+    tags: ["Transformers", "PyTorch", "Computer Vision", "GANs", "CNNs", "XAI"]
   },
   {
     period: "Oct 2024 — Mar 2025",
@@ -19,12 +19,11 @@ export const experiences = [
     company: "National Taiwan Normal University",
     location: "Taipei, Taiwan",
     description: [
-      "Conducted literature review on deep reinforcement learning techniques for humanoid robot control, identifying key challenges and solutions",
-      "Built custom URDF models and developed inverse kinematics controllers for humanoid robot simulation in Gazebo",
-      "Implemented motion-planning pipelines using ROS2 and MoveIt2 for complex manipulation tasks",
-      "Conducted weekly research progress reviews with PI, presenting experimental results and iterating on robot behavior optimization"
+      "Developed and tested manipulation policies in Gazebo simulation for a bipedal robot, focusing on stable object grasping and handling tasks",
+      "Ran iterative Gazebo simulation experiments with weekly ablations to optimize bipedal locomotion stability and training efficiency",
+      "Engineered custom URDF robot models with accurate inertial tensors and developed full ROS2 pipelines including inverse kinematics solvers, MoveIt motion planners, and joint-space controllers",
     ],
-    tags: ["ROS2", "Gazebo", "Deep RL", "Humanoid Robotics", "Python"]
+    tags: ["ROS2", "Gazebo", "Deep RL", "Robotics", "CV"]
   },
   {
     period: "Jan 2023 — Apr 2024",
@@ -32,10 +31,8 @@ export const experiences = [
     company: "Presidency University",
     location: "Bengaluru, India",
     description: [
-      "Developed deep learning pipelines for cervical cell classification, achieving 99.5% test accuracy on SIPKaMed dataset, surpassing existing benchmarks",
-      "Evaluated 8+ segmentation and classification architectures (VGG16, ResNet, EfficientNet) for medical imaging workflows",
-      "Conducted psychological survey study on undergraduate mental health post-COVID, presented findings at IEEE International conference",
-      "Co-authored multiple journal publications and performed experimental reproducibility testing on trained models"
+      "Engineered end-to-end deep learning pipelines using TensorFlow for cervical cell classification on 4,000+ scans, achieving 99.5% test accuracy on the SIPKaMed dataset, surpassing existing benchmarks",
+      "Co-authored multiple publications for peer-reviewed journals and performed experimental reproducibility testing on trained models "
     ],
     tags: ["Medical Imaging", "Deep Learning", "TensorFlow", "Keras"]
   }

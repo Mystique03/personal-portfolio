@@ -1,14 +1,6 @@
 // src/data/publications.js
 export const publications = [
   {
-    title: "Herb-GANNet: Synthetic Data Generation through Conditional GANs for Improving Accuracy in Medicinal Leaf Classification",
-    authors: "Smitha S Reddy, Vaishnavi K, Sapna R",
-    status: "Under Revision",
-    year: "2025",
-    type: "journal",
-    link: null 
-  },
-  {
     title: "IoT and Edge Computing Security: Essential Aspects of 6G Networks",
     authors: "Smitha S Reddy, Sapna R",
     venue: "6G Cyber Security Resilience: Trends and Challenges, Springer",

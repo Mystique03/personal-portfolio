@@ -3,21 +3,21 @@
 // Featured projects (shown on main page)
 export const featuredProjects = [
   {
-    title: "Medicinal Leaf Classification with cDCGANs",
-    description: "Reduced validation loss by 27.15% on imbalanced datasets using cDCGAN augmentation pipelines for medicinal leaf classification.",
-    tags: ["PyTorch", "Deep Learning", "GANs", "OpenCV"],
-    link: null,
-    year: 2025,
-    madeAt: "Manipal University",
+    title: "Research Paper Summarizer",
+    description: "End-to-end RAG + Agentic AI research assistant to answer questions from uploaded papers or fetch live results from the web",
+    tags: ["LLMs", "RAG", "LangChain", "RAGAS", "FastAPI", "Agentic AI"],
+    link: "https://github.com/Mystique03/research-chatbot",
+    year: 2026,
+    madeAt: "Personal Project",
     featured: true
   },
   {
-    title: "CerConvNet: Cervical Cancer Detection",
-    description: "Achieved 99.5% test accuracy on SIPKaMed dataset by fine-tuning SOTA deep learning models for cervical cell classification.",
-    tags: ["TensorFlow", "Keras", "Deep Learning", "Transfer Learning"],
-    link: "https://github.com/Mystique03/cervical_cancer_detection",
-    year: 2024,
-    madeAt: "Presidency University",
+    title: "HerbGANNet - cDCGANs for imbalanced datasets",
+    description: "Reduced validation loss by 27.15% on imbalanced datasets using cDCGAN augmentation pipelines for medicinal leaf classification.",
+    tags: ["PyTorch", "Deep Learning", "GANs", "OpenCV"],
+    link: "Coming soon",
+    year: 2025,
+    madeAt: "Manipal University",
     featured: true
   },
   {
@@ -44,6 +44,33 @@ export const featuredProjects = [
 export const allProjects = [
   ...featuredProjects,
   {
+    title: "Formula1 Race Predictor",
+    description: "F1 race position predictor on data scrapped from 2018–2024",
+    tags: ["scikit-learn", "Prediction", "Pandas", "XgBoost"],
+    link: "Coming soon",
+    year: 2026,
+    madeAt: "Personal Project",
+    featured: false
+  },
+  {
+    title: "Iris - Improved",
+    description: "Improved version of Iris with better voice and resoning support",
+    tags: ["Python", "TensorFlow", "NLTK", "NLP"],
+    link: "https://github.com/Mystique03/iris-improved",
+    year: 2026,
+    madeAt: "Personal Project",
+    featured: false
+  },
+  {
+    title: "CerConvNet: Cervical Cancer Detection",
+    description: "Achieved 99.5% test accuracy on SIPKaMed dataset by fine-tuning SOTA deep learning models for cervical cell classification.",
+    tags: ["TensorFlow", "Keras", "Deep Learning", "Transfer Learning"],
+    link: "https://github.com/Mystique03/cervical_cancer_detection",
+    year: 2024,
+    madeAt: "Presidency University",
+    featured: false
+  },
+  {
     title: "Diablo Bot",
     description: "Built ROS2 workspace with custom URDFs and controllers enabling robot kinematics and motion planning for autonomous navigation.",
     tags: ["ROS2", "Python", "Gazebo", "MoveIt"],
@@ -65,7 +92,7 @@ export const allProjects = [
     title: "Customer Satisfaction Prediction: Linear Regression Model",
     description: "Developed a linear regression model to predict customer's time spent on an ecommerce site.",
     tags: ["Python", "matplotlib", "Pandas", "Data Analysis"],
-    link: "https://github.com/yourusername/style-transfer",
+    link: null,
     year: 2023,
     madeAt: "Presidency University",
     featured: false
@@ -74,8 +101,8 @@ export const allProjects = [
     title: "Sentiment Analysis",
     description: "Real-time sentiment analysis dashboard for social media data using BERT models.",
     tags: ["Transformers", "Python", "NLP"],
-    link: null,
-    year: 2023,
+    link: "coming soon",
+    year: 2025,
     madeAt: "Personal Project",
     featured: false
   },
