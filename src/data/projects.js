@@ -15,9 +15,9 @@ export const featuredProjects = [
     title: "HerbGANNet - cDCGANs for imbalanced datasets",
     description: "Reduced validation loss by 27.15% on imbalanced datasets using cDCGAN augmentation pipelines for medicinal leaf classification.",
     tags: ["PyTorch", "Deep Learning", "GANs", "OpenCV"],
-    link: "Coming soon",
-    year: 2025,
-    madeAt: "Manipal University",
+    link: null,
+    year: 2025 - 2026,
+    madeAt: "Manipal University (code coming soon)",
     featured: true
   },
   {
@@ -30,14 +30,14 @@ export const featuredProjects = [
     featured: true
   },
   {
-    title: "Iris - LLM Health Assistant",
-    description: "Developed a disease prediction pipeline integrating Machine Learning classifiers with LLM reasoning for intelligent health recommendations.",
+    title: "Iris - Improved",
+    description: "Improved version of Iris with better voice and resoning support",
     tags: ["Python", "TensorFlow", "NLTK", "NLP"],
-    link: "https://github.com/Mystique03/Iris_ws",
-    year: 2023,
-    madeAt: "Presidency University (Thesis Project)",
+    link: "https://github.com/Mystique03/iris-improved",
+    year: 2026,
+    madeAt: "Personal Project",
     featured: true
-  }
+  },
 ];
 
 // All projects (for archive page)
@@ -47,18 +47,9 @@ export const allProjects = [
     title: "Formula1 Race Predictor",
     description: "F1 race position predictor on data scrapped from 2018–2024",
     tags: ["scikit-learn", "Prediction", "Pandas", "XgBoost"],
-    link: "Coming soon",
+    link: null,
     year: 2026,
-    madeAt: "Personal Project",
-    featured: false
-  },
-  {
-    title: "Iris - Improved",
-    description: "Improved version of Iris with better voice and resoning support",
-    tags: ["Python", "TensorFlow", "NLTK", "NLP"],
-    link: "https://github.com/Mystique03/iris-improved",
-    year: 2026,
-    madeAt: "Personal Project",
+    madeAt: "Personal Project (code coming soon)",
     featured: false
   },
   {
@@ -89,6 +80,15 @@ export const allProjects = [
     featured: false
   },
   {
+    title: "Iris - LLM Health Assistant",
+    description: "Developed a disease prediction pipeline integrating Machine Learning classifiers with LLM reasoning for intelligent health recommendations.",
+    tags: ["Python", "TensorFlow", "NLTK", "NLP"],
+    link: "https://github.com/Mystique03/Iris_ws",
+    year: 2023,
+    madeAt: "Presidency University (Thesis Project)",
+    featured: true
+  }
+  {
     title: "Customer Satisfaction Prediction: Linear Regression Model",
     description: "Developed a linear regression model to predict customer's time spent on an ecommerce site.",
     tags: ["Python", "matplotlib", "Pandas", "Data Analysis"],
@@ -101,7 +101,7 @@ export const allProjects = [
     title: "Sentiment Analysis",
     description: "Real-time sentiment analysis dashboard for social media data using BERT models.",
     tags: ["Transformers", "Python", "NLP"],
-    link: "coming soon",
+    link: null,
     year: 2025,
     madeAt: "Personal Project",
     featured: false
