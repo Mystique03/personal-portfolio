@@ -87,7 +87,7 @@ export const allProjects = [
     year: 2023,
     madeAt: "Presidency University (Thesis Project)",
     featured: true
-  }
+  },
   {
     title: "Customer Satisfaction Prediction: Linear Regression Model",
     description: "Developed a linear regression model to predict customer's time spent on an ecommerce site.",
