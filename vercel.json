@@ -1,6 +1,13 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://drive.google.com/file/d/1rVjg2xB5p-GKf4wBC8sVVcv7frDwZSEG/view?usp=drive_link",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
