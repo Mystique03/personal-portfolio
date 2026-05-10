@@ -16,7 +16,7 @@ export const featuredProjects = [
     description: "Reduced validation loss by 27.15% on imbalanced datasets using cDCGAN augmentation pipelines for medicinal leaf classification.",
     tags: ["PyTorch", "Deep Learning", "GANs", "OpenCV"],
     link: null,
-    year: 2025 - 2026,
+    year: 2025,
     madeAt: "Manipal University (code coming soon)",
     featured: true
   },

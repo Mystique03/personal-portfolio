@@ -1,6 +1,6 @@
 // src/components/Experience.jsx
 import React from 'react';
-import { FileText, GraduationCap, Briefcase } from 'lucide-react';
+import { FileText, Briefcase } from 'lucide-react';
 import { experiences } from '../data/experiences';
 
 const Experience = ({ theme }) => {
@@ -59,28 +59,16 @@ const Experience = ({ theme }) => {
           ))}
         </ol>
         
-        {/* Two Resume Buttons */}
-        <div className="mt-12 flex flex-col sm:flex-row gap-4">
+        {/* Resume Button */}
+        <div className="mt-12">
           <a
-            href="/academic-cv.pdf"
+            href="https://drive.google.com/file/d/1rVjg2xB5p-GKf4wBC8sVVcv7frDwZSEG/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center font-medium leading-tight ${theme.textBright} group`}
           >
             <span className={`border-b border-transparent pb-px transition ${theme.accent} group-hover:border-current group-focus-visible:border-current`}>
-              Academic CV
-            </span>
-            <GraduationCap className={`ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none ${theme.accent}`} />
-          </a>
-          
-          <a
-            href="/job-resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center font-medium leading-tight ${theme.textBright} group`}
-          >
-            <span className={`border-b border-transparent pb-px transition ${theme.accent} group-hover:border-current group-focus-visible:border-current`}>
-              Job Resume
+              Resume
             </span>
             <Briefcase className={`ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none ${theme.accent}`} />
           </a>
